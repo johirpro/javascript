@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="one column">
+    <title>init htmlcss</title>
+    <link rel="icon" type="image/x-icon" href="../../vendor/images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../../vendor/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="scripts/script.js"></script>
+
+  </head>
+  <body>
+    <div id="main-wrapper">
+      <!-- START HEADER SECTION -->
+      <div id="header-wrapper" class="header">
+        <div><img src="../../vendor/images/logo.png"></div>
+        <p> Site name</p>
+      </div>
+      <!-- END HEADER SECTION -->
+
+      <!-- START MAIN CONTENT SECTION -->
+      <div id="content-wrapper" class="content top-padding">
+        <h2>Warning Messages</h2>
+
+        <p>To close the Warning message please click on the "X" symbol.</p>
+        <div class="warning">
+          <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+          <strong>Warning!</strong> An Error Occured.
+        </div>
+      </div>
+      <!-- END MAIN CONTENT SECTION -->
+
+      <!-- START FOOTER SECTION -->
+      <div id="footer-wrapper" class="footer top-padding">
+        <div class="footer-content">
+          Footer message will go here
+        </div>
+        <div class="copyright">
+          Copyright&copy;2018  
+        </div>
+      </div>    
+      <!-- END FOOTER SECTION -->  
+    </div>
+  </body>
+</html>
