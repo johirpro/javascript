@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Append div</title>
+</head>
+<body>
+	<div id="main" onclick="addDiv()">Test Text</div>
+
+	<script type="text/javascript">
+		function addDiv() {
+			var mainDiv = document.getElementById("main");
+			document.body.appendChild(mainDiv.cloneNode(true));
+		}
+	</script>
+</body>
+</html>
