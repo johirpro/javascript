@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="addDivContent()">Add More Div</button>
+
+<div>Sample Text</div>
+
+<script>
+function addDivContent() {
+	var divTag = document.getElementsByTagName("div");
+	var TotaldivTag = divTag.length;
+	var firstDivContent = divTag[0].innerHTML;
+
+	document.body.appendChild(divTag[0].cloneNode(true));
+	divTag[TotaldivTag].innerHTML = firstDivContent + ' ' + (TotaldivTag);
+}
+</script>
+
+
+</body>
+</html>
